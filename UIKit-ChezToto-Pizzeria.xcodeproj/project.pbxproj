@@ -13,6 +13,10 @@
 		D90F049B2B0CD92C00B346BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90F04992B0CD92C00B346BB /* Main.storyboard */; };
 		D90F049D2B0CD92E00B346BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90F049C2B0CD92E00B346BB /* Assets.xcassets */; };
 		D90F04A02B0CD92E00B346BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90F049E2B0CD92E00B346BB /* LaunchScreen.storyboard */; };
+		D90F04AA2B0CE7C900B346BB /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04A92B0CE7C900B346BB /* Dish.swift */; };
+		D90F04AF2B0CE80800B346BB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04AE2B0CE80800B346BB /* Presenter.swift */; };
+		D90F04B12B0CED8800B346BB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04B02B0CED8800B346BB /* Restaurant.swift */; };
+		D90F04B32B0D1CFE00B346BB /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90F04B22B0D1CFE00B346BB /* DetailView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		D90F049C2B0CD92E00B346BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90F049F2B0CD92E00B346BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90F04A12B0CD92E00B346BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90F04A92B0CE7C900B346BB /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		D90F04AE2B0CE80800B346BB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		D90F04B02B0CED8800B346BB /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D90F04B22B0D1CFE00B346BB /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +65,50 @@
 			isa = PBXGroup;
 			children = (
 				D90F04932B0CD92C00B346BB /* AppDelegate.swift */,
-				D90F04952B0CD92C00B346BB /* SceneDelegate.swift */,
-				D90F04972B0CD92C00B346BB /* ViewController.swift */,
-				D90F04992B0CD92C00B346BB /* Main.storyboard */,
+				D90F04AB2B0CE7CA00B346BB /* Model */,
+				D90F04AC2B0CE7CD00B346BB /* View */,
+				D90F04AD2B0CE7D400B346BB /* Presenter */,
+				D90F04B42B0D473800B346BB /* Supporting */,
 				D90F049C2B0CD92E00B346BB /* Assets.xcassets */,
-				D90F049E2B0CD92E00B346BB /* LaunchScreen.storyboard */,
 				D90F04A12B0CD92E00B346BB /* Info.plist */,
 			);
 			path = "UIKit-ChezToto-Pizzeria";
+			sourceTree = "<group>";
+		};
+		D90F04AB2B0CE7CA00B346BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D90F04B02B0CED8800B346BB /* Restaurant.swift */,
+				D90F04A92B0CE7C900B346BB /* Dish.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D90F04AC2B0CE7CD00B346BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D90F049E2B0CD92E00B346BB /* LaunchScreen.storyboard */,
+				D90F04992B0CD92C00B346BB /* Main.storyboard */,
+				D90F04B22B0D1CFE00B346BB /* DetailView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D90F04AD2B0CE7D400B346BB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D90F04AE2B0CE80800B346BB /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D90F04B42B0D473800B346BB /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				D90F04952B0CD92C00B346BB /* SceneDelegate.swift */,
+				D90F04972B0CD92C00B346BB /* ViewController.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +171,7 @@
 			files = (
 				D90F04A02B0CD92E00B346BB /* LaunchScreen.storyboard in Resources */,
 				D90F049D2B0CD92E00B346BB /* Assets.xcassets in Resources */,
+				D90F04B32B0D1CFE00B346BB /* DetailView.storyboard in Resources */,
 				D90F049B2B0CD92C00B346BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +185,10 @@
 			files = (
 				D90F04982B0CD92C00B346BB /* ViewController.swift in Sources */,
 				D90F04942B0CD92C00B346BB /* AppDelegate.swift in Sources */,
+				D90F04B12B0CED8800B346BB /* Restaurant.swift in Sources */,
 				D90F04962B0CD92C00B346BB /* SceneDelegate.swift in Sources */,
+				D90F04AA2B0CE7C900B346BB /* Dish.swift in Sources */,
+				D90F04AF2B0CE80800B346BB /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
