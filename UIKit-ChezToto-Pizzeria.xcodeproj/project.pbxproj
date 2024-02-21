@@ -17,6 +17,7 @@
 		D90F04AF2B0CE80800B346BB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04AE2B0CE80800B346BB /* Presenter.swift */; };
 		D90F04B12B0CED8800B346BB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04B02B0CED8800B346BB /* Restaurant.swift */; };
 		D90F04B32B0D1CFE00B346BB /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90F04B22B0D1CFE00B346BB /* DetailView.storyboard */; };
+		D92BE0222B8273850082027D /* DetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92BE0212B8273850082027D /* DetailsView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D90F04AE2B0CE80800B346BB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		D90F04B02B0CED8800B346BB /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		D90F04B22B0D1CFE00B346BB /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
+		D92BE0212B8273850082027D /* DetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				D90F049E2B0CD92E00B346BB /* LaunchScreen.storyboard */,
 				D90F04992B0CD92C00B346BB /* Main.storyboard */,
 				D90F04B22B0D1CFE00B346BB /* DetailView.storyboard */,
+				D92BE0212B8273850082027D /* DetailsView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				D90F04A02B0CD92E00B346BB /* LaunchScreen.storyboard in Resources */,
 				D90F049D2B0CD92E00B346BB /* Assets.xcassets in Resources */,
+				D92BE0222B8273850082027D /* DetailsView.storyboard in Resources */,
 				D90F04B32B0D1CFE00B346BB /* DetailView.storyboard in Resources */,
 				D90F049B2B0CD92C00B346BB /* Main.storyboard in Resources */,
 			);
