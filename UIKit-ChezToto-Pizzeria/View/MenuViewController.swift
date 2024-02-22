@@ -11,21 +11,43 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	@IBOutlet weak var table: UITableView!
 	
+	// Nombre de sections
+	func numberOfSections(in tableView: UITableView) -> Int {
+		CategoryEnum.allCases.count
+	}
+	
 	// Nombre d'élémént dans ma TableView
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return data.count
+		let category = CategoryEnum.allCases[section]
+		switch category {
+		case .entree:
+			return appetizers.count
+		case .pizza:
+			return pizzas.count
+		}
 	}
 	
 	// Contenu de ma cellule
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let flat = data[indexPath.row]
 		let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
-		cell.picture.image = flat.picture
-		cell.title.text = flat.title
-		cell.subtitle.text = flat.subtitle
-		cell.price.text = flat.price
+		let category = CategoryEnum.allCases[indexPath.section]
+		switch category {
+			   case .entree:
+				   let currentFlat = appetizers[indexPath.row]
+				   configureCell(cell, with: currentFlat)
+			   case .pizza:
+				   let currentFlat = pizzas[indexPath.row]
+				   configureCell(cell, with: currentFlat)
+			   }
 		return cell
 	}
+	
+	private func configureCell(_ cell: CustomTableViewCell, with flat: Flat) {
+		 cell.picture.image = flat.picture
+		 cell.title.text = flat.title
+		 cell.subtitle.text = flat.subtitle
+		 cell.price.text = flat.price
+	 }
 	
 	// Donne une taille à mon image
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

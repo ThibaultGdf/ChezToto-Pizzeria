@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SwiftUI
+import UIKit
 
 struct Flat {
 	let category: CategoryEnum
@@ -16,7 +16,7 @@ struct Flat {
 	let price: String
 }
 
-enum CategoryEnum {
+enum CategoryEnum: CaseIterable {
 	case entree
 	case pizza
 }
@@ -65,3 +65,11 @@ let data = [
 		price: "12,50€"
 	)
 ]
+
+let appetizers = data.filter { flat in
+	flat.category == .entree
+}
+
+let pizzas = data.filter { flat in
+	flat.category == .pizza
+}
