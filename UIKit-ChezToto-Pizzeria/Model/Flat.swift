@@ -16,9 +16,9 @@ struct Flat {
 	let price: String
 }
 
-enum CategoryEnum: CaseIterable {
-	case entree
-	case pizza
+enum CategoryEnum: String, CaseIterable {
+	case entree = "Entrées"
+	case pizza = "Pizzas"
 }
 
 let data = [
