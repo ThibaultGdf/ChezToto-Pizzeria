@@ -44,16 +44,9 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return CategoryEnum.allCases[section].rawValue
-//		let category = CategoryEnum.allCases[section]
-//		switch category {
-//		case .entree:
-//			return CategoryEnum.entree.rawValue
-//		case .pizza:
-//			return CategoryEnum.pizza.rawValue
-//		}
 	}
 	
-	private func configureCell(_ cell: CustomTableViewCell, with flat: Flat) {
+	private func configureCell(_ cell: CustomTableViewCell, with flat: Dish) {
 		 cell.picture.image = flat.picture
 		 cell.title.text = flat.title
 		 cell.subtitle.text = flat.subtitle

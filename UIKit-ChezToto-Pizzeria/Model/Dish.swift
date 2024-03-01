@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Flat {
+struct Dish {
 	let category: CategoryEnum
 	let picture: UIImage?
 	let title: String
@@ -22,42 +22,42 @@ enum CategoryEnum: String, CaseIterable {
 }
 
 let data = [
-	Flat(
+	Dish(
 		category: .entree,
 		picture: UIImage(named: "garlic"),
 		title: "Garlic bread",
 		subtitle: "Du pain légèrement croustillant parfumé à l’ail",
 		price: "3,50€"
 	),
-	Flat(
+	Dish(
 		category: .entree,
 		picture: UIImage(named: "potatoes"),
 		title: "Potatoes",
 		subtitle: "Quartiers de pommes de terre dorés au four",
 		price: "3,50€"
 	),
-	Flat(
+	Dish(
 		category: .pizza,
 		picture: UIImage(named: "margarita"),
 		title: "Margarita",
 		subtitle: "La classique base tomate et fromage",
 		price: "10,00€"
 	),
-	Flat(
+	Dish(
 		category: .pizza,
 		picture: UIImage(named: "vegetarienne"),
 		title: "Végétarienne",
 		subtitle: "Base tomate, légumes de saison et fromage",
 		price: "12,00€"
 	),
-	Flat(
+	Dish(
 		category: .pizza,
 		picture: UIImage(named: "peperoni"),
 		title: "Peperoni",
 		subtitle: "Base tomate, peperoni et fromage",
 		price: "13,50€"
 	),
-	Flat(
+	Dish(
 		category: .pizza,
 		picture: UIImage(named: "fromages"),
 		title: "4 fromages",

@@ -13,7 +13,7 @@
 		D90F049B2B0CD92C00B346BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90F04992B0CD92C00B346BB /* Main.storyboard */; };
 		D90F049D2B0CD92E00B346BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90F049C2B0CD92E00B346BB /* Assets.xcassets */; };
 		D90F04A02B0CD92E00B346BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90F049E2B0CD92E00B346BB /* LaunchScreen.storyboard */; };
-		D90F04AA2B0CE7C900B346BB /* Flat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04A92B0CE7C900B346BB /* Flat.swift */; };
+		D90F04AA2B0CE7C900B346BB /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04A92B0CE7C900B346BB /* Dish.swift */; };
 		D90F04AF2B0CE80800B346BB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04AE2B0CE80800B346BB /* Presenter.swift */; };
 		D90F04B12B0CED8800B346BB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F04B02B0CED8800B346BB /* Restaurant.swift */; };
 		D931B4822B863C4C00B8D1E7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931B4812B863C4C00B8D1E7 /* MenuViewController.swift */; };
@@ -29,7 +29,7 @@
 		D90F049C2B0CD92E00B346BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90F049F2B0CD92E00B346BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90F04A12B0CD92E00B346BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D90F04A92B0CE7C900B346BB /* Flat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flat.swift; sourceTree = "<group>"; };
+		D90F04A92B0CE7C900B346BB /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		D90F04AE2B0CE80800B346BB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		D90F04B02B0CED8800B346BB /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		D931B4812B863C4C00B8D1E7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D90F04B02B0CED8800B346BB /* Restaurant.swift */,
-				D90F04A92B0CE7C900B346BB /* Flat.swift */,
+				D90F04A92B0CE7C900B346BB /* Dish.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 				D90F04B12B0CED8800B346BB /* Restaurant.swift in Sources */,
 				D931B4822B863C4C00B8D1E7 /* MenuViewController.swift in Sources */,
 				D90F04962B0CD92C00B346BB /* SceneDelegate.swift in Sources */,
-				D90F04AA2B0CE7C900B346BB /* Flat.swift in Sources */,
+				D90F04AA2B0CE7C900B346BB /* Dish.swift in Sources */,
 				D90F04AF2B0CE80800B346BB /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
